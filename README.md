@@ -1,0 +1,5 @@
+# What this is
+Very crude and rudimantary script which lets you import comments from WordPress to hashover-next. 
+* Export your blog to XML using wp-admin panel, name it wordpress.xml and place it in the script's directory.
+* Do the same with hashover-next sqlite database. This script uses sqlite, but does not create `comments` table. Let the hashover create the table and only then place the `hashover.sqlite` here. `hashover.sqlite` can be found in `hashover/comments`.
+* Run the script knowing that : emails are not imported due hashing procedure which was too time-consuming to implement. Also : thread names are generated in a very simplified way, so it is common that my sript gets this wrong. I had to correct a few comments manually here and there (the collumn I'm talking about is called `thread`).
