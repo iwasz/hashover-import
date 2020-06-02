@@ -60,7 +60,7 @@ for item in root.iter('item'):
     postName = item.find('wp:post_name', ns)
     category = item.find('category')
 
-    finalName = 'iwasz-pl-'
+    finalName = ''
 
     if category != None:
         finalName = finalName + category.get('nicename') + '-'
